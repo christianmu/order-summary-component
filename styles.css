@@ -14,37 +14,33 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-}
-
 body {
+  font-size: 16;
   font-family: 'Red Hat Display', sans-serif;
-  background-color: var(--pale-blue);
+  background: var(--pale-blue) url('./images/pattern-background-mobile.svg')
+    center/cover no-repeat;
 }
 
 button {
   font-family: inherit;
 }
 
-.bg__image {
-  background: url('./images/pattern-background-mobile.svg') no-repeat
-    center/cover;
-  height: 400px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.container {
+#container {
   background-color: #fff;
   padding: 20px;
   margin: 20px;
   border-radius: 15px;
   box-shadow: 0px 3px 5px hsl(224, 23%, 55%, 0.2);
+}
+
+.illu img {
+  width: 100%;
+}
+
+.anual-plan {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--very-pale-blue);
 }
 
 .attribution {
@@ -55,10 +51,10 @@ button {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .bg__image {
     background: url('./images/pattern-background-desktop.svg') no-repeat
       center/cover;
     height: 50vh;
   }
-} ;
+} */
