@@ -17,7 +17,7 @@
 body {
   font-size: 16;
   font-family: 'Red Hat Display', sans-serif;
-  background: var(--pale-blue) url('./images/pattern-background-mobile.svg')
+  background: var(--pale-blue) url('./images/pattern-background-desktop.svg')
     center/cover no-repeat;
 }
 
@@ -26,7 +26,9 @@ button {
 }
 
 main {
-  max-width: 450px;
+  margin: auto;
+  margin-top: 2rem;
+  width: 450px;
   background-color: #fff;
   overflow: hidden;
   border-radius: 15px;
@@ -37,6 +39,11 @@ img {
   width: 100%;
   margin: 0;
   display: block;
+}
+
+.wrapper {
+  width: 354px;
+  margin: auto;
 }
 
 .anual-plan {
