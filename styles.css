@@ -25,16 +25,18 @@ button {
   font-family: inherit;
 }
 
-#container {
+main {
+  max-width: 450px;
   background-color: #fff;
-  padding: 20px;
-  margin: 20px;
+  overflow: hidden;
   border-radius: 15px;
   box-shadow: 0px 3px 5px hsl(224, 23%, 55%, 0.2);
 }
 
-.illu img {
+img {
   width: 100%;
+  margin: 0;
+  display: block;
 }
 
 .anual-plan {
@@ -43,18 +45,12 @@ button {
   background-color: var(--very-pale-blue);
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-/* @media (min-width: 768px) {
-  .bg__image {
-    background: url('./images/pattern-background-desktop.svg') no-repeat
-      center/cover;
-    height: 50vh;
+footer {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
   }
-} */
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
