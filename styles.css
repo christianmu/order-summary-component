@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-:root {
-  --pale-blue: hsl(225, 100%, 94%);
-  --bright-blue: hsl(245, 75%, 52%);
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,44 +9,45 @@
 html {
   font-family: 'Red Hat Display', sans-serif;
   font-size: 62.5%;
-}
-
-body {
-  background: var(--pale-blue) url('./images/pattern-background-desktop.svg')
-    center/cover no-repeat;
-}
-
-button {
-  font-family: inherit;
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-repeat: repeat-x;
+  background-color: var(--pale-blue);
+  min-width: 375px;
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
 }
 
 main {
-  margin: auto;
-  margin-top: 2rem;
   width: 45rem;
+  margin: 7rem auto;
   background-color: #fff;
   overflow: hidden;
   border-radius: 1.5rem;
   box-shadow: 0rem 0.3rem 0.5rem hsl(224, 23%, 55%, 0.2);
 }
 
-img {
-  width: 100%;
-  margin: 0;
-  display: block;
+footer {
+  font-size: 1.1rem;
+  text-align: center;
 }
-
-h1 {
-  font-weight: 900;
-  font-size: 2.8rem;
-  color: hsl(223, 47%, 23%);
-  margin-top: 4.5rem;
+footer a {
+  color: hsl(228, 45%, 44%);
 }
 
 .wrapper {
   width: 35.4rem;
   margin: auto;
   text-align: center;
+}
+
+.order-summary {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: hsl(223, 47%, 23%);
+  margin-top: 4.5rem;
 }
 
 .sum-text {
@@ -110,7 +103,7 @@ h1 {
 
 .proceed-payment {
   background-color: var(--bright-blue);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   font-size: 1.5rem;
   font-weight: 900;
   border: none;
@@ -138,12 +131,4 @@ h1 {
 
 .cancel-order:hover {
   color: var(--dark-blue);
-}
-
-footer {
-  font-size: 11px;
-  text-align: center;
-}
-footer a {
-  color: hsl(228, 45%, 44%);
 }
