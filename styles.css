@@ -22,7 +22,7 @@ html {
 
 main {
   width: 45rem;
-  margin: 7rem auto;
+  margin: 9.6rem auto 2rem auto;
   background-color: #fff;
   overflow: hidden;
   border-radius: 1.5rem;
@@ -35,6 +35,10 @@ footer {
 }
 footer a {
   color: hsl(228, 45%, 44%);
+}
+
+img {
+  max-width: 100%;
 }
 
 .wrapper {
@@ -50,7 +54,7 @@ footer a {
   margin-top: 4.5rem;
 }
 
-.sum-text {
+.order-text {
   font-weight: 500;
   font-size: 1.6rem;
   color: var(--desaturated-blue);
@@ -131,4 +135,64 @@ footer a {
 
 .cancel-order:hover {
   color: var(--dark-blue);
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    background-image: url('./images/pattern-background-mobile.svg');
+  }
+
+  main {
+    margin: 7.1rem auto 2rem auto;
+    width: 32.6rem;
+  }
+
+  .wrapper {
+    width: 27.82rem;
+  }
+  .order {
+    width: 26.22rem;
+  }
+
+  .order-summary {
+    font-size: 2.2rem;
+    margin-top: 3.2rem;
+  }
+
+  .order-text {
+    font-size: 1.6rem;
+    margin-top: 1.6rem;
+  }
+
+  .plan-box {
+    padding: 1.7rem 1.595rem 1.6rem 1.595rem;
+    margin-top: 2.4rem;
+    justify-content: flex-start;
+  }
+
+  .an-plan {
+    font-size: 1.4rem;
+  }
+
+  .price {
+    margin-left: 2rem;
+    margin-right: 5rem;
+  }
+
+  .an-price {
+    font-size: 1.4rem;
+  }
+
+  .change {
+    font-size: 1.3rem;
+  }
+
+  .proceed-payment {
+    margin-top: 2.4rem;
+  }
+
+  .cancel-order {
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+  }
 }
