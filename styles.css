@@ -14,9 +14,12 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16;
+html {
   font-family: 'Red Hat Display', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
   background: var(--pale-blue) url('./images/pattern-background-desktop.svg')
     center/cover no-repeat;
 }
@@ -28,11 +31,11 @@ button {
 main {
   margin: auto;
   margin-top: 2rem;
-  width: 450px;
+  width: 45rem;
   background-color: #fff;
   overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0px 3px 5px hsl(224, 23%, 55%, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 0rem 0.3rem 0.5rem hsl(224, 23%, 55%, 0.2);
 }
 
 img {
@@ -41,15 +44,57 @@ img {
   display: block;
 }
 
-.wrapper {
-  width: 354px;
-  margin: auto;
+h1 {
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: #1f2e55;
+  margin-top: 4.5rem;
 }
 
-.anual-plan {
+.wrapper {
+  width: 35.4rem;
+  margin: auto;
+  text-align: center;
+}
+
+.sum-text {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #717fa6;
+  line-height: 2.6rem;
+  margin-top: 1.7rem;
+}
+
+.plan-box {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+  padding: 2.5rem 2.4rem;
+  margin-top: 2rem;
+}
+
+.music-note {
+  width: 4.8rem;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 9.4rem;
+}
+
+.an-plan {
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #1f2e55;
+}
+
+.an-price {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #717fa6;
 }
 
 footer {
