@@ -47,7 +47,7 @@ img {
 h1 {
   font-weight: 900;
   font-size: 2.8rem;
-  color: #1f2e55;
+  color: hsl(223, 47%, 23%);
   margin-top: 4.5rem;
 }
 
@@ -60,7 +60,7 @@ h1 {
 .sum-text {
   font-weight: 500;
   font-size: 1.6rem;
-  color: #717fa6;
+  color: var(--desaturated-blue);
   line-height: 2.6rem;
   margin-top: 1.7rem;
 }
@@ -94,7 +94,7 @@ h1 {
 .an-price {
   font-weight: 500;
   font-size: 1.6rem;
-  color: #717fa6;
+  color: var(--desaturated-blue);
 }
 
 footer {
