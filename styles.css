@@ -121,6 +121,7 @@ img {
 .proceed-payment:hover {
   background-color: hsl(245, 83%, 68%);
   box-shadow: 0rem 1rem 2.5rem hsl(245, 83%, 68%, 0.3);
+  cursor: pointer;
 }
 
 .cancel-order {
